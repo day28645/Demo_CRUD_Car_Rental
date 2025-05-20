@@ -1,0 +1,118 @@
+
+CREATE TABLE Positions (
+    Position_Id int NOT NULL AUTO_INCREMENT,
+    title varchar(20) NOT NULL,
+    PRIMARY KEY (Position_Id)
+);
+
+CREATE TABLE Users (
+    Id_Card int NOT NULL,
+    passwords varchar(8) NOT NULL,
+    firstname varchar(255) NOT NULL,
+    lastname varchar(255) NOT NULL,
+    email varchar(255) NOT NULL,
+    address varchar(255) NOT NULL,
+    phone varchar(10) NOT NULL,
+    Position_Id int NOT NULL,
+    PRIMARY KEY (Id_Card),
+    FOREIGN KEY (Position_Id) REFERENCES Positions (Position_Id)
+);
+
+CREATE TABLE Login (
+    Login_Id int NOT NULL AUTO_INCREMENT,
+    login_time datetime,
+    logout_time datetime, 
+    Id_Card int NOT NULL,
+    PRIMARY KEY (Login_Id),
+    FOREIGN KEY (Id_Card) REFERENCES Users (Id_Card)
+);
+
+CREATE TABLE Location (
+    Location_Id int NOT NULL AUTO_INCREMENT,
+    location_name varchar(255) NOT NULL,
+    location_address varchar(255) NOT NULL,
+    add_loc_datetime datetime NOT NULL,
+    Id_Card int NOT NULL,
+    PRIMARY KEY (Location_Id),
+    FOREIGN KEY (Id_Card) REFERENCES Users (Id_Card)
+);
+
+CREATE TABLE Car (
+    Chassis_No varchar(17) NOT NULL,
+    brand varchar(255) NOT NULL,
+    model varchar(255) NOT NULL,
+    car_type varchar(255) NOT NULL,
+    color varchar(50) NOT NULL,
+    fuel varchar(50) NOT NULL,
+    image varchar(255) NOT NULL,
+    rent_price float(10,2) NOT NULL,
+    car_book_no varchar(255) NOT NULL,
+    price float(10,2) NOT NULL,
+    car_status varchar(50) NOT NULL,
+    register_datetime datetime NOT NULL,
+    regis_no varchar(50) NOT NULL,
+    regis_date date NOT NULL,
+    car_owner varchar(50) NOT NULL,
+    Id_Card int NOT NULL,
+    PRIMARY KEY (Chassis_No),
+    FOREIGN KEY (Id_Card) REFERENCES Users (Id_Card)
+);
+
+CREATE TABLE Car_History (
+    History_Id int NOT NULL AUTO_INCREMENT,
+    regis_no varchar(50),
+    car_owner varchar(50),
+    car_status varchar(50),
+    rent_price float(10,2),
+    history_datetime datetime NOT NULL,
+    Id_Card int NOT NULL,
+    Chassis_No varchar(17) NOT NULL,
+    PRIMARY KEY (History_Id),
+    FOREIGN KEY (Id_Card) REFERENCES Users (Id_Card), 
+    FOREIGN KEY (Chassis_No) REFERENCES Car (Chassis_No)
+);
+
+CREATE TABLE Booking (
+	Book_Id int NOT NULL AUTO_INCREMENT,
+    book_status varchar(50) ,
+    pick_date date NOT NULL,
+    pick_time time NOT NULL,
+    return_date date NOT NULL,
+    return_time time NOT NULL,
+    total_price float(10,2) ,
+    cancel_fee float(10,2) ,
+    duration int NOT NULL,
+    Pick_Id int NOT NULL,
+    Return_Id int NOT NULL,
+    PRIMARY KEY (Book_Id),
+    FOREIGN KEY (Pick_Id) REFERENCES Location (Location_Id), 
+    FOREIGN KEY (Return_Id) REFERENCES Location (Location_Id)
+);
+
+CREATE TABLE Create_Booking (
+    Id_Card int NOT NULL,
+    Book_Id int NOT NULL,
+    Chassis_No varchar(17) NOT NULL,
+    book_datetime datetime NOT NULL,
+    checkin_date date,
+    checkin_time time,
+    checkout_date date,
+    checkout_time time,
+    PRIMARY KEY (Id_Card,Book_Id,Chassis_No),
+    FOREIGN KEY (Id_Card) REFERENCES Users (Id_Card),
+    FOREIGN KEY (Book_Id) REFERENCES Booking (Book_Id),
+    FOREIGN KEY (Chassis_No) REFERENCES Car (Chassis_No)
+);
+
+CREATE TABLE Cancel_Booking (
+	Id_Card int NOT NULL,
+    Book_Id int NOT NULL,
+    Chassis_No varchar(17) NOT NULL,
+    cancel_datetime datetime NOT NULL,
+    PRIMARY KEY (Id_Card,Book_Id,Chassis_No),
+    FOREIGN KEY (Id_Card) REFERENCES Users (Id_Card),
+    FOREIGN KEY (Book_Id) REFERENCES Booking (Book_Id),
+    FOREIGN KEY (Chassis_No) REFERENCES Car (Chassis_No)
+);
+
+
