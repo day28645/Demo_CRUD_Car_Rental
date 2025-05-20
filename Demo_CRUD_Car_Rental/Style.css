@@ -1,0 +1,357 @@
+﻿/*Site Master*/
+body {
+    background-color: white;
+}
+
+/*Payment*/
+.col-sm-4_border {
+    background-color: rgb(148 163 184);
+    float: left;
+    width: 33.33333%;
+    height: 600px;
+}
+
+.color_car_detail {
+    background-color: #E57373;
+}
+
+.progress {
+    height: 8px;
+}
+
+.progress-info {
+    font-size: 11px;
+}
+
+.access-data {
+    font-size: 11px;
+}
+
+.progress-bar {
+    background: #3656DC;
+}
+
+.btn-primary, .btn-primary:active, .btn-primary:visited, .btn-primary:focus {
+    background-color: #3656DC;
+    border-color: #3656DC;
+}
+
+    .btn-primary:hover {
+        background-color: #2a43ad;
+        border-color: #2a43ad;
+    }
+
+
+/*Site Master*/
+body {
+    background-color: white;
+}
+
+/*Payment*/
+.col-sm-4_border {
+    background-color: rgb(148 163 184);
+    float: left;
+    width: 33.33333%;
+    height: 600px;
+}
+
+.color_car_detail {
+    background-color: #E57373;
+}
+
+.progress {
+    height: 8px;
+}
+
+.progress-info {
+    font-size: 11px;
+}
+
+.access-data {
+    font-size: 11px;
+}
+
+.progress-bar {
+    background: #3656DC;
+}
+
+.btn-primary, .btn-primary:active, .btn-primary:visited, .btn-primary:focus {
+    background-color: #3656DC;
+    border-color: #3656DC;
+}
+
+    .btn-primary:hover {
+        background-color: #2a43ad;
+        border-color: #2a43ad;
+    }
+
+/*--thank you pop starts here--*/
+.thank-you-pop {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+    .thank-you-pop img {
+        width: 76px;
+        height: auto;
+        margin: 0 auto;
+        display: block;
+        margin-bottom: 25px;
+    }
+
+    .thank-you-pop h1 {
+        font-size: 42px;
+        margin-bottom: 25px;
+        color: #5C5C5C;
+    }
+
+    .thank-you-pop p {
+        font-size: 20px;
+        margin-bottom: 27px;
+        color: #5C5C5C;
+    }
+
+    .thank-you-pop h3.cupon-pop {
+        font-size: 25px;
+        margin-bottom: 40px;
+        color: #222;
+        display: inline-block;
+        text-align: center;
+        padding: 10px 20px;
+        border: 2px dashed #222;
+        clear: both;
+        font-weight: normal;
+    }
+
+        .thank-you-pop h3.cupon-pop span {
+            color: #03A9F4;
+        }
+
+    .thank-you-pop a {
+        display: inline-block;
+        margin: 0 auto;
+        padding: 9px 20px;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 14px;
+        background-color: #8BC34A;
+        border-radius: 17px;
+    }
+
+        .thank-you-pop a i {
+            margin-right: 5px;
+            color: #fff;
+        }
+
+#ignismyModal .modal-header {
+    border: 0px;
+}
+
+
+body {
+    margin-top: 20px;
+}
+
+.avatar {
+    width: 200px;
+    height: 200px;
+}
+
+/*--thank you pop ends here--*/
+
+.project-info-box {
+    margin: 15px 0;
+    background-color: #fff;
+    padding: 30px 40px;
+    border-radius: 5px;
+}
+
+    .project-info-box p {
+        margin-bottom: 15px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #d5dadb;
+    }
+
+        .project-info-box p:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+
+    .project-info-box p {
+        margin-bottom: 15px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #d5dadb;
+    }
+
+body {
+    margin-top: 20px;
+    background: #eee;
+}
+
+/*panel*/
+.panel {
+    border: none;
+    box-shadow: none;
+}
+
+.panel-heading {
+    border-color: #eff2f7;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.panel-title {
+    color: #2A3542;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*product list*/
+
+.prod-cat li a {
+    border-bottom: 1px dashed #d9d9d9;
+}
+
+.prod-cat li a {
+    color: #3b3b3b;
+}
+
+.prod-cat li ul {
+    margin-left: 30px;
+}
+
+    .prod-cat li ul li a {
+        border-bottom: none;
+    }
+
+        .prod-cat li ul li a:hover, .prod-cat li ul li a:focus, .prod-cat li ul li.active a, .prod-cat li a:hover, .prod-cat li a:focus, .prod-cat li a.active {
+            background: none;
+            color: #ff7261;
+        }
+
+.pro-lab {
+    margin-right: 20px;
+    font-weight: normal;
+}
+
+.pro-sort {
+    padding-right: 20px;
+    float: left;
+}
+
+.pro-page-list {
+    margin: 5px 0 0 0;
+}
+
+.product-list img {
+    width: 100%;
+    border-radius: 4px 4px 0 0;
+    -webkit-border-radius: 4px 4px 0 0;
+}
+
+.product-list .pro-img-box {
+    position: relative;
+}
+
+.adtocart {
+    background: #fc5959;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+    border: 3px solid #fff;
+    left: 45%;
+    bottom: -25px;
+    position: absolute;
+}
+
+    .adtocart i {
+        color: #fff;
+        font-size: 25px;
+        line-height: 42px;
+    }
+
+.pro-title {
+    color: #5A5A5A;
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.product-list .price {
+    color: #fc5959;
+    font-size: 15px;
+}
+
+.pro-img-details {
+    margin-left: -15px;
+}
+
+    .pro-img-details img {
+        width: 100%;
+    }
+
+.pro-d-title {
+    font-size: 16px;
+    margin-top: 0;
+}
+
+.product_meta {
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+    margin: 15px 0;
+}
+
+    .product_meta span {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .product_meta a, .pro-price {
+        color: #fc5959;
+    }
+
+.pro-price, .amount-old {
+    font-size: 18px;
+    padding: 0 10px;
+}
+
+.amount-old {
+    text-decoration: line-through;
+}
+
+.quantity {
+    width: 120px;
+}
+
+.pro-img-list {
+    margin: 10px 0 0 -15px;
+    width: 100%;
+    display: inline-block;
+}
+
+    .pro-img-list a {
+        float: left;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+
+.pro-d-head {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.required {
+    vertical-align: top;
+    color: red;
+    width: 2%;
+}
