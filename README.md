@@ -1,4 +1,4 @@
-Online Car Rental System - Web Application
+Car Rental System - Web Application
 
 ลูกค้า ร้าน Car's Day ให้บริการเช่ารถยนต์ ผ่าน web application โดยให้ลูกคำสมัครสมาชิก เพื่อเข้าสู่ระบบจองรถยนต์ ตามสถานที่ วัน เวลา ตามต้องการ และหากลูกค้าต้องการยกเลิก การจองรถยนต์ ต้องมีค่าธรรมเนียมกายกเลิก 
 
